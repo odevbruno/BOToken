@@ -1,26 +1,26 @@
 # BOToken
 
-Contrato de Token ERC-20
-Este repositório contém a implementação de um contrato de token ERC-20 em Solidity. O contrato consiste em duas partes principais: ERC20Token e SampleERC20.
+ERC-20 Token Contract
+This repository contains the implementation of an ERC-20 token contract in Solidity. The contract consists of two main parts: `ERC20Token` and `SampleERC20`.
 
-ERC20Token
-ERC20Token é uma biblioteca que implementa as funcionalidades básicas de um contrato ERC-20. Ele inclui métodos para transferência de tokens, aprovação de gastos por terceiros e consulta de saldo e permissões.
+## ERC20Token
+`ERC20Token` is a library that implements the basic functionalities of an ERC-20 contract. It includes methods for token transfer, approval of spending by third parties, and querying balance and allowances.
 
-SampleERC20
-SampleERC20 é um contrato que herda de ERC20Token e define um token específico. Ele permite a criação de novos tokens ERC-20 com parâmetros personalizados, incluindo nome, símbolo, número de casas decimais e oferta total de tokens.
+## SampleERC20
+`SampleERC20` is a contract that inherits from `ERC20Token` and defines a specific token. It allows the creation of new ERC-20 tokens with customizable parameters, including name, symbol, number of decimal places, and total token supply.
 
-Compilação e Implantação
-Para compilar e implantar este contrato, siga estas etapas:
+## Compilation and Deployment
+To compile and deploy this contract, follow these steps:
 
-Clone este repositório para o seu ambiente de desenvolvimento local.
-Compile o contrato utilizando o compilador Solidity.
-Implante o contrato em uma rede Ethereum compatível, como a rede de teste Ropsten ou Ganache.
-Uso
-Após a implantação do contrato, você pode interagir com ele por meio de chamadas de função apropriadas, como transfer, approve, transferFrom e outras, dependendo das suas necessidades específicas. Certifique-se de consultar a documentação oficial do contrato para obter informações detalhadas sobre as funções disponíveis.
+1. Clone this repository to your local development environment.
+2. Compile the contract using the Solidity compiler.
+3. Deploy the contract to a compatible Ethereum network, such as the Ropsten test network or Ganache.
 
-Considerações de Segurança
-Este contrato é uma implementação básica e pode ser expandido com mais funcionalidades, mas tenha em mente as considerações de segurança ao fazer isso. Realize auditorias de segurança completas antes de implantar este contrato em um ambiente de produção para garantir que ele atenda aos padrões de segurança adequados.
+## Usage
+After deploying the contract, you can interact with it through appropriate function calls such as `transfer`, `approve`, `transferFrom`, and others, depending on your specific needs. Be sure to refer to the official contract documentation for detailed information about available functions.
 
-Licença
-Este contrato é distribuído sob a licença Apache License, Version 2.0. Veja o arquivo LICENSE para obter mais detalhes.
+## Security Considerations
+This contract is a basic implementation and can be expanded with more functionalities, but keep security considerations in mind when doing so. Perform thorough security audits before deploying this contract to a production environment to ensure it meets appropriate security standards.
 
+## License
+This contract is distributed under the Apache License, Version 2.0. See the LICENSE file for more details.
