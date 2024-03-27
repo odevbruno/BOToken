@@ -1,33 +1,26 @@
 # BOToken
 
-BOToken é uma cryptocurrency criada com Solidity para fins acadêmicos. Este documento fornece uma visão geral do projeto, instruções para compilar e implantar o contrato inteligente, bem como informações sobre como interagir com a cryptocurrency.
+Contrato de Token ERC-20
+Este repositório contém a implementação de um contrato de token ERC-20 em Solidity. O contrato consiste em duas partes principais: ERC20Token e SampleERC20.
 
-Visão Geral
-BOToken é uma cryptocurrency ERC-20 baseada na Ethereum, desenvolvida como parte de um projeto acadêmico para entender os conceitos fundamentais por trás das cryptocurrencies e dos contratos inteligentes. A cryptocurrency é projetada para fins de aprendizado e não deve ser usada em ambientes de produção.
+ERC20Token
+ERC20Token é uma biblioteca que implementa as funcionalidades básicas de um contrato ERC-20. Ele inclui métodos para transferência de tokens, aprovação de gastos por terceiros e consulta de saldo e permissões.
 
-Funcionalidades
-ERC-20 Compliance: O contrato inteligente BOToken segue o padrão ERC-20, o que permite sua interação com carteiras e exchanges compatíveis com ERC-20.
-Geração de Tokens: Os tokens BOToken podem ser gerados por meio de mineração ou por uma função específica do contrato inteligente.
-Transferências de Tokens: Os titulares de BOToken podem transferir seus tokens para outros endereços.
-Consulta de Saldo: Os titulares de BOToken podem verificar o saldo de sua conta.
+SampleERC20
+SampleERC20 é um contrato que herda de ERC20Token e define um token específico. Ele permite a criação de novos tokens ERC-20 com parâmetros personalizados, incluindo nome, símbolo, número de casas decimais e oferta total de tokens.
+
 Compilação e Implantação
-Para compilar e implantar o contrato inteligente BOToken, siga estas etapas:
+Para compilar e implantar este contrato, siga estas etapas:
 
 Clone este repositório para o seu ambiente de desenvolvimento local.
-Compile o contrato inteligente BOToken usando o compilador Solidity.
-Imprima o bytecode do contrato e as informações de ABI (Interface de Aplicação Binária).
-Implante o contrato inteligente em uma rede Ethereum compatível, como a rede de teste Ropsten ou Ganache.
-Interagindo com BOToken
-Depois de implantar o contrato inteligente BOToken, você pode interagir com ele por meio de várias operações:
+Compile o contrato utilizando o compilador Solidity.
+Implante o contrato em uma rede Ethereum compatível, como a rede de teste Ropsten ou Ganache.
+Uso
+Após a implantação do contrato, você pode interagir com ele por meio de chamadas de função apropriadas, como transfer, approve, transferFrom e outras, dependendo das suas necessidades específicas. Certifique-se de consultar a documentação oficial do contrato para obter informações detalhadas sobre as funções disponíveis.
 
-Transferir Tokens: Use a função de transferência para enviar tokens BOToken para outros endereços.
-Consultar Saldo: Use a função de consulta de saldo para verificar o saldo de uma conta específica.
-Gerar Tokens: Se implementado, use a função de mineração ou outra função específica para gerar novos tokens.
-Aviso Legal
-BOToken é um projeto criado apenas para fins acadêmicos e de aprendizado. Não deve ser usado em ambientes de produção ou para transações reais. O desenvolvedor não se responsabiliza por quaisquer perdas ou danos decorrentes do uso deste projeto.
-
-Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias, relatar problemas ou enviar solicitações de recebimento.
+Considerações de Segurança
+Este contrato é uma implementação básica e pode ser expandido com mais funcionalidades, mas tenha em mente as considerações de segurança ao fazer isso. Realize auditorias de segurança completas antes de implantar este contrato em um ambiente de produção para garantir que ele atenda aos padrões de segurança adequados.
 
 Licença
-Este projeto é distribuído sob a licença MIT. Veja o arquivo LICENSE para obter mais detalhes.
+Este contrato é distribuído sob a licença Apache License, Version 2.0. Veja o arquivo LICENSE para obter mais detalhes.
+
